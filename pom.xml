@@ -28,14 +28,11 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.xerial</groupId>
-			<artifactId>sqlite-jdbc</artifactId>
-			<version>3.45.1.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.hibernate.orm</groupId>
-			<artifactId>hibernate-community-dialects</artifactId>
-		</dependency>
+           <groupId>org.postgresql</groupId>
+           <artifactId>postgresql</artifactId>
+           <scope>runtime</scope>
+        </dependency>
+		
 
 		<!-- Security -->
 		<dependency>
@@ -87,6 +84,26 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+        <!-- Swagger UI -->
+        <!-- Swagger UI -->
+        <dependency>
+           <groupId>org.springdoc</groupId>
+           <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+           <version>2.3.0</version>
+        </dependency>
+		<dependency>
+           <groupId>com.bucket4j</groupId>
+           <artifactId>bucket4j_jdk17-core</artifactId>
+           <version>8.11.0</version>
+        </dependency>
+
+<!-- Rate limiting — correct version -->
+        
+        <!-- Rate limiting -->
+		
+		
+		
 
 	</dependencies>
 
